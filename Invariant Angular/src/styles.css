@@ -1,0 +1,261 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+img {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.content-holder {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar {
+    overflow: hidden;
+    background-image: url("assets/img/background.jpg");
+    background-color: #333;
+    top: 0;
+    width: 100%; 
+  }
+  
+  .navbar a {
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  .nav-item {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 7px 10px;
+    display: block;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Raleway', Arial, sans-serif;
+
+}
+.nav-item:hover {
+    background: rgb(161, 188, 223);
+    opacity: 0.7;
+    color: black;
+}
+.nav-item:hover:before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:-15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 34px 15px;
+    color: black;
+    border-color: transparent transparent rgb(161, 188, 223) transparent;
+}
+.nav-item:hover:after {
+    content: '';
+    position: absolute;
+    top:0;
+    right:-15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 34px 15px 0 0;
+    color: black;
+    border-color: rgb(161, 188, 223) transparent transparent transparent;
+
+}
+  .logoimg {
+    width: 200px;
+    height: 80px;
+  }
+
+  .profileimgleft {
+    float: left;
+    width: 200px;
+    height: 200px;
+  }
+
+  .profileimgright {
+    float: right;
+    width: 200px;
+    height: 200px;
+  }
+
+
+  .underline:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto; 
+    width: 5%; 
+    padding-bottom: 20px; 
+    border-bottom: 1px solid gray; 
+  }
+
+  .effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    background-color: rgb(161, 188, 223);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 20px 0px;
+    width: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+.effect.effect-5 {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 50% 50% 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.effect.effect-5:hover {
+  text-indent: 30px;
+}
+.effect.effect-5:hover:before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  text-indent: 0;
+}
+
+span{
+  display:inline-block;
+}
+
+.profilesmall {
+  float: left;
+  width: 20%;
+  position: relative;
+  height: 160px;
+}
+
+.profile1 {
+  float: left;
+  width: 20%;
+  left: 40px;
+  position: relative;
+}
+.profile2 {
+  float: left;
+  width: 20%;
+  left: 50px;
+  position: relative;
+}
+.profile3 {
+  float: left;
+  width: 20%;
+  left: 60px;
+  position: relative;
+}
+.profile4 {
+  float: left;
+  width: 20%;
+  left: 70px;
+  position: relative;
+}
+
+.column {
+  float: left;
+  width: 35%;
+  position: relative;
+  height: 192px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 79px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.column:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn {
+  border: 2px solid rgb(161, 188, 223);
+  background-color: black;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.info {
+  opacity: 0.7;
+  border-color: rgb(161, 188, 223);
+  color: white
+}
+
+.info:hover {
+  opacity: 0.7;
+  background: rgb(161, 188, 223);
+  color: black;
+}
+
+.topmargin{
+  margin-top: 100px;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+i {
+  cursor: pointer;
+}
+
+html, body { height: 100%; background-image: url("assets/img/background.jpg");}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

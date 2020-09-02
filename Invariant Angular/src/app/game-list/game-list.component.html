@@ -1,0 +1,28 @@
+<div class="container topmargin table-striped">
+<div class="float-right pb-4">
+    <a class="btn btn-info btn-sm" (click)="openDialog()">Add Game!<i class="fa fa-gamepad pl-2"></i></a>
+</div>
+<table class="table">
+    <thead>
+      <tr class="text-white">
+        <th>#</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Move up</th>
+        <th>Move down</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-white" *ngFor="let game of gameList">
+        <th>{{game.GameId}}</th>
+        <th>{{game.GameName}}</th>
+        <th>{{game.GameDescription}}</th>
+        <th><i class="fa fa-arrow-up" (click)="moveUp(game.GameId)" aria-hidden="true"></i></th>
+        <th><i class="fa fa-arrow-down" (click)="moveDown(game.GameId)" aria-hidden="true"></i></th>
+        <th><a (click)="deleteGame(game.GameId)">
+            <i class="fa fa-trash-o fa-lg"></i></a></th>
+      </tr>
+    </tbody>
+  </table>
+</div>
